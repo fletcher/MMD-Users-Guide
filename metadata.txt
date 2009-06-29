@@ -1,0 +1,24 @@
+Title:				MultiMarkdown User's Guide
+Subtitle:			Version 2.0.b6
+Author:				Fletcher T. Penney
+Web:				http://fletcherpenney.net/
+Copyright:			2005-2009 Fletcher T. Penney.  
+					This work is licensed under a Creative Commons License.  
+					http://creativecommons.org/licenses/by-nc-sa/3.0/
+XMP:				CCAttributionShareAlike
+Keywords:			Markdown  
+					LaTeX  
+					TeX  
+					PDF  
+					XHTML  
+					XSLT  
+					Oddmuse  
+					OmniOutliner  
+					MultiMarkdown  
+					RTF  
+					TextMate  
+Version:			2.0.b6
+Base Header Level:	2
+CSS:				http://fletcherpenney.net/document.css
+XHTML XSLT:			xhtml-toc-h2.xslt
+

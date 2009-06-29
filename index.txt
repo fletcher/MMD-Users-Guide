@@ -1,0 +1,28 @@
+# Overall structure for MMD User's Guide #
+
+metadata.txt
+
+introduction.txt
+	whatismmd.txt
+
+quickstart.txt
+
+syntaxguide.txt
+
+latex.txt
+
+advancedfeatures.txt
+
+components.txt
+
+compatiblesoftware.txt
+
+technicalissues.txt
+
+acknowledgments.txt
+
+knownissues.txt
+
+todo.txt
+
+versions.txt

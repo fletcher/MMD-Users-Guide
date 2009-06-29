@@ -1,0 +1,47 @@
+
+# Acknowledgments #
+
+Thanks to the individuals and groups below for their contributions to
+improving Markdown and MultiMarkdown:
+
+*	John Gruber
+*	Michel Fortin
+*	Jonathan Weber
+*	Mark Eli Kalderon
+*	Choan C. Gálvez
+*	Dr. Drang
+*	Robert McGonegal
+*	David Green
+*	Trey Pickard
+*	Saleem
+*	Melinda Norris
+*	Sean Wallace
+*	Allan Odgaard
+*	Stefan Brantschen
+*	Keith Blount
+*	Amber Vaesca
+*	Gerd Knops
+*	John Purnell
+*	Jonathan Coulombe
+*	Jason Bandlow
+*	Joakim Hertze
+*	Kee-Lin Steven Chan
+*	Vasil Yaroshevich
+*	Matt Neuburg
+*	James Howison
+*	Edward Nixon
+*	etherean
+*	Özgür Gökmen
+*	Chad Schmidt
+*	Greg (gr)
+*	Ben Jennings
+*	Silvan Kaiser
+*	Tomas Doran
+*	Rob Walton
+*	Dan Rolander
+*	Duoyi wu
+*	Dan Dascalescu
+*	Ingolf Schäfer
+
+and others I have surely forgotten....
+

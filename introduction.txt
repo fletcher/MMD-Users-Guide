@@ -1,0 +1,13 @@
+
+
+# Introduction to MultiMarkdown #
+
+This document is an introduction to [MultiMarkdown][] --- what it is, how to
+use it, how you can help make it better. This document exists in multiple
+formats: a wiki page, a plain text document, a pdf, a [Scrivener][] document,
+etc. Find the format that best suits your needs, or create your own. That is
+what MultiMarkdown was designed to be used for!
+
+
+[MultiMarkdown]:	http://fletcherpenney.net/MultiMarkdown
+[Scrivener]:		http://www.literatureandlatte.com/scrivener.html

@@ -1,0 +1,57 @@
+
+# Component Software #
+
+The MultiMarkdown system is actually a patchwork of multiple programs, which
+are run in a specific order by shell scripts. I have written the glue
+utilities, and the MultiMarkdown modifications to John Gruber's original
+Markdown program, but I can't take credit for the rest.
+
+
+## MultiMarkdown [MMD] ##
+
+* by Fletcher T. Penney
+* <http://fletcherpenney.net/MultiMarkdown>
+
+MultiMarkdown is my update to John Gruber's
+[Markdown](http://daringfireball.net/projects/markdown/) software. It is what
+this bundle is based on. To learn more about why you would want to use this
+bundle, check out the web page for MultiMarkdown.
+
+## SmartyPants ##
+
+* by John Gruber
+* <http://daringfireball.net/projects/smartypants/>
+
+SmartyPants is another program by John Gruber, and is designed to add "smart"
+typography to HTML documents, including proper quotes, dashes, and ellipses.
+Additionally, there are several variations of the SmartyPants files to handle
+different localizations (specifically, Dutch, French, German, and Swedish).
+These localizations were provided by Joakim Hertze.
+
+## Text::ASCIIMathML ##
+
+* by Mark Nodine
+* <http://search.cpan.org/~nodine/>
+
+This perl module adds support for converting the ASCIIMathML syntax into
+MathML markup suitable for inclusion in XHTML documents.
+
+## ASCIIMathPHP (Deprecated)##
+
+* by Kee-Lin Steven Chan
+* <http://www.jcphysics.com/ASCIIMath/>
+
+This bundle includes the MultiMarkdown specific variant of the original
+ASCIIMathPHP. It allows you to use the ASCIIMath syntax to describe
+mathematical formulas in plain text language.
+
+This software has been replaced by Text::ASCIIMathML.
+
+## XSLTMathML ##
+
+* by Vasil Yaroshevich
+* <http://www.raleigh.ru/MathML/mmltex/index.php?lang=en>
+
+This bundle includes the MultiMarkdown specific variant of the original
+XSLTMathML. It converts XHTML with MathML markup into LaTeX math environment
+code. Very handy for making well typeset documents that are math-heavy.

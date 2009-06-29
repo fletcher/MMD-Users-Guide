@@ -1,0 +1,172 @@
+
+# Applications That Support MultiMarkdown #
+
+There are several applications and utilities out there that include support
+for MultiMarkdown, that can make it even easier to create your output
+documents.
+
+If you know of something not included here, please let me know.
+
+## MultiMarkdown Drag and Drop ##
+
+Early on, as MultiMarkdown became increasingly powerful (and complex) I
+realized that most people would want something a little easier to use than
+what had become a rather complicated command line string.
+
+The first solution was a set of Drag and Drop applications created using
+[Platypus]. These were designed to allow you to drop a MultiMarkdown text file
+on the application icon, and they spit out a .xhtml, .pdf, .rtf, or .tex file,
+depending on which application you used.
+
+These utilities are still available, and have been updated to work with the
+"Common" MultiMarkdown Installation:
+
+* <http://files.fletcherpenney.net/MultiMarkdownDragAndDrop.zip>
+
+
+[Platypus]: http://sveinbjorn.sytes.net/platypus "Platypus Homepage"
+
+## Scrivener ##
+
+[Scrivener] is a:
+
+> ... project management tool for writers that acts like your own
+> little writing shed at the bottom of the garden, where you have
+> cork notice-boards, ring-binders, photos, clippings paperclipped
+> to jottings, notebooks and reams of typewritten pages piling up
+> - along with a secretary who keeps it all in neat piles and uses
+> his speed-reading skills to find what you need as soon as you need
+> it. [#Blount][]
+
+As of beta 3, Scrivener has the ability to export to a MultiMarkdown text
+file, or to run the conversion utilities to create XHTML, RTF, or LaTeX files.
+It also has support for MultiMarkdown metadata.
+
+Scrivener's strengths, as they relate to MultiMarkdown, included the ability
+to arrange and re-arrange your document as desired using its outliner view,
+cork-board, and other features. It also has some limited ability to convert
+RTF bold and italic formatting into MultiMarkdown syntax, which can be useful
+when converting documents from other formats.
+
+Scrivener is primarily focused towards creative writing, but when combined
+with MultiMarkdown it is very useful for academic and technical writing where
+a LaTeX file is highly desirable.
+
+Keith Blount has done a great job with Scrivener, and I was happy to be able
+to help implement support for MultiMarkdown. I look forward to helping to
+continue to use and refine this program myself.
+
+At this time, Scrivener is in public beta, and should be available for
+purchase towards the end of 2006 or beginning of 2007. But the beta is very
+usable as is, and gives you until Jan 2007 or so to try it out.
+
+For more information, I have created a User's Guide to MultiMarkdown and
+Scrivener:
+
+* <http://fletcherpenney.net/Using_MultiMarkdown_with_Scrivener>
+
+[#Blount]: Literate and Latte - Scrivener.  
+<http://www.literatureandlatte.com/scrivener.html>
+
+## TextMate ##
+
+[TextMate][] is a powerful text editor that:
+
+> brings Apple's approach to operating systems into the world of text
+> editors. By bridging UNIX underpinnings and GUI, TextMate cherry-picks
+> the best of both worlds to the benefit of expert scripters and novice
+> users alike....
+
+> Created by a closet UNIX geek who was lured to the Mac platform by
+> its ease of use and elegance, TextMate has been referred to as the
+> culmination of Emacs and OS X and has resulted in countless requests
+> for both a Windows and Linux port, but TextMate remains exclusive for
+> the Mac, and that is how we like it![#macromates][]
+
+TextMate is somewhere between a text editor for programmers, and a writing
+tool. If you like being able to customize your writing environment, and like
+fancy tools to handle the formatting for you, then TextMate might be the app
+for you.
+
+Allan Odgaard created an initial Bundle that added Markdown support to
+TextMate. It included some basic MultiMarkdown support as well. But to be
+honest, *I* had trouble getting it to work. And if I had difficulty, I can
+only imagine how much trouble others had.
+
+So I created my own Bundle. It includes a lot of features that automatically
+format metadata, lists, tables, headers, etc. It can clean up the text to make
+it look as presentable as possible in plain text, and it can then
+automatically convert your text into XHTML, RTF, Word, or LaTeX/PDF.
+
+My TextMate Bundle is available on my web site:
+
+* <http://fletcher.freeshell.org/wiki/MultiMarkdownTextMateBundle>
+
+It is designed to play nicely with the default Markdown Bundle, so you can
+have them both installed. You may wish to disable a few features from the
+original bundle, but that is totally up to you.
+
+
+
+[#macromates]: TextMate --- The Missing Editor for Mac OS X.  
+<http://macromates.com/>
+
+
+## Using Scrivener and TextMate Together ##
+
+It is possible, using the "Edit in TextMate" feature from TextMate. Basically,
+it adds the ability to edit any Cocoa based text editor view in TextMate. This
+allows you to edit the text from a Scrivener document in TextMate, in order to
+take advantage of the automatic formatting, while still retaining the
+organizational features of Scrivener.
+
+This feature has its limitations (it breaks the undo stack in Scrivener) and
+is only for advanced users. I take no responsibility for it, as I didn't write
+Scrivener or TextMate. But it can be useful...
+
+To learn more, check out the information on Cocoa Text Fields:
+
+* <http://macromates.com/textmate/manual/using_textmate_from_terminal>
+
+## The "Common" MultiMarkdown approach ##
+
+During beta testing of the MultiMarkdown support with Scrivener, it was
+proposed that having a standard location for MultiMarkdown could make it easy
+to integrate with various applications, and to allow the user a single place
+to update their MultiMarkdown files, independent of the application it was
+being used with.
+
+For Mac OS X users, this boils down to allowing a MultiMarkdown installation
+to be placed in one of two locations, where it is available to any application
+that knows to look for it there:
+
+* ~/Library/Application Support/MultiMarkdown
+
+* /Library/Application Support/MultiMarkdown
+
+The first is available only to the user, and the second is available to anyone
+on that computer.
+
+When Scrivener, or another application that supports this feature is run, it
+checks to see if a MultiMarkdown installation is available in either of those
+places. If not (the first time you run the program, for instance), then some
+programs might install a version of MultiMarkdown here; others might simply
+use an a copy of MultiMarkdown embedded within the application bundle.
+
+The benefit of this approach is that if I update MultiMarkdown, you can simply
+replace the updated files in the Application Support folder, without having to
+update the other applications.
+
+Please let me know if you have suggestions on improving this feature, or if
+you are interested in including support for MultiMarkdown in your own
+application.
+
+Naturally, this approach only works with Mac OS X. If anyone is interested in
+working on a similar feature for other operating systems, please let me know.
+
+## Create Your Own ##
+
+Between shell scripts, applescripting, Automator, and other tools, you can
+usually find an easy way to incorporate MultiMarkdown into your own workflow.
+If you find something that you think should be added here, let me know!
+
