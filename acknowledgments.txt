@@ -42,6 +42,7 @@ improving Markdown and MultiMarkdown:
 *	Duoyi wu
 *	Dan Dascalescu
 *	Ingolf Schäfer
+*	Chris Bunch
 
 and others I have surely forgotten....
 
