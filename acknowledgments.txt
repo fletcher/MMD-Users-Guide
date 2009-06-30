@@ -43,6 +43,7 @@ improving Markdown and MultiMarkdown:
 *	Dan Dascalescu
 *	Ingolf Schäfer
 *	Chris Bunch
+*	Oblomov
 
 and others I have surely forgotten....
 
