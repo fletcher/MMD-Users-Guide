@@ -7,6 +7,21 @@ documents.
 
 If you know of something not included here, please let me know.
 
+
+## Movable Type ##
+
+MultiMarkdown can be used with Movable Type.  To install:
+
+1. Place `MultiMarkdown.pl` in the `mt/plugins/Markdown` directory
+2. Copy `ASCIIMathML.pm` into the same directory
+3. Make sure `SmartyPants.pl` is also there
+
+Now MultiMarkdown should be working with Movable Type. For some reason,
+however, it seems somewhat temperamental at times. I haven't been able to
+figure out why, but it works for me on my local machine and on my host's
+server. It has also worked for other users.
+
+
 ## MultiMarkdown Drag and Drop ##
 
 Early on, as MultiMarkdown became increasingly powerful (and complex) I
