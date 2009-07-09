@@ -13,10 +13,6 @@
   sure what to do - varwidth is incompatible with xcolor and is not a standard
   package. Suggestions welcome.
 
-* You need to use the newest version of xsltproc if you want to make best use
-  of the XSLT features (such as LaTeX formatting.) The version Apple includes
-  does not support the `last()` function and can cause problems.
-
 * Creating a link to an image by label doesn't work properly anymore
 
 * I'm having difficulty with getting the glossary feature to work in the
