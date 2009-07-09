@@ -20,15 +20,20 @@
   out there can point out what I'm doing wrong, let me know.
 
 * RTF support currently only exists for Mac OS X. Conversion from XHTML to RTF
-  happens via Apples `textutil` tool. It is possible to write an XSLT file
-  that converts from XHTML to RTF, but I have little to no interest in writing
-  this myself, as I don't really use the RTF format very often. If someone
-  were interested in developing this, I would help out. An added benefit would
-  be that the XSLT could actually do a better job than Apple's tool in terms
-  of footnote support and internal links.  Contact me if you're interested.
+  happens via Apples `textutil` tool. It is possible to write an XSLT file 
+  that converts from XHTML to RTF, but I have little to no interest in 
+  writing this myself, as I don't really use the RTF format very often. If 
+  someone were interested in developing this, I would help out. An added 
+  benefit would be that the XSLT could actually do a better job than Apple's 
+  tool in terms of footnote support and internal links.  Contact me if 
+  you're interested. In the meantime, I suggest using [Google Docs][] to 
+  import the XHTML file, and then export as an RTF.  It does a much better 
+  job.
 
 * The sample MMD file creates two copies of the footnote in the `MultiMarkdown
   vs. Crayons` table, even though I only call for one. Not sure where the `a`
   footnote comes from.... Any help in tracking this down would be appreciated,
   as it didn't used to do this.
 
+
+[Google Docs]: http://docs.google.com/
