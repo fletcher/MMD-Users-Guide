@@ -83,6 +83,15 @@ Scrivener:
 [#Blount]: Literate and Latte - Scrivener.  
 <http://www.literatureandlatte.com/scrivener.html>
 
+## OmniOutliner ##
+
+I have written an export plugin for OmniOutliner that allows you to craft your
+MultiMarkdown documents within OmniOutliner, and then export to a text file
+(or folder with text file and images), that can then be processed with
+Markdown or MultiMarkdown.
+
+<http://fletcherpenney.net/multimarkdown/multimarkdown_and_omnioutliner/>
+
 ## TextMate ##
 
 [TextMate][] is a powerful text editor that:
