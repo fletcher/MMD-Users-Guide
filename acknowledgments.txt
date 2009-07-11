@@ -46,6 +46,7 @@ improving Markdown and MultiMarkdown:
 *	Oblomov
 *	Alex Melhuish
 *	Stephan Mueller
+*	Josh Brown
 
 and others I have surely forgotten....
 
