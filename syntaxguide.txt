@@ -197,7 +197,7 @@ such files myself, but others may find it useful.
 
 *I strongly encourage you to use another route to convert XHTML to RTF.  
 I've had the best results with [Google Docs](htts://docs.google.com/).  For 
-non-Mac users, that definitely the way to go.*
+non-Mac users, that's definitely the way to go.*
 
 ### Subtitle ###
 
