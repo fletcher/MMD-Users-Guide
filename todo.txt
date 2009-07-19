@@ -9,11 +9,6 @@
   linked images, save them to a tmp directory, and then convert them for use
   within a pdf.
 
-* Consider adding the ability to only convert the first instance of a
-  `WikiWord` or `[[Free Link]]`, rather than each instance. I suppose this
-  would have to be grouped by level, however, which would complicate
-  things....
-
 * Decide on appropriate management of alignment when a cell spans multiple
   columns. Currently, the alignment of the first cell is used. (If Markdown
   goes to a whitespace-based alignment option, that could be used in this

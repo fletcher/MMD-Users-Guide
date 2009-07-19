@@ -76,10 +76,9 @@ if using the memoir class, you might want a first level header to be
 interpreted as a chapter, rather than as a part. To do this, simply set `Base
 Header Level` to `2`.
 
-### Base URL ###
+### Base URL (Deprecated)###
 
-Set to the base part of a url to be used for `WikiLinks` and `[[Free Links]]`.
-See [WikiLinks][] for more information.
+Deprecated - WikiWords and WikiLinks no longer supported.
 
 
 ### Bibliography Title ###
@@ -212,7 +211,7 @@ string within the `<head>` section of an HTML document, and is also used by
 other export formats.
 
 
-### Use WikiLinks ###
+### Use WikiLinks (Deprecated)###
 
 Set to `true` or `1` to enable the use of `WikiWords` and `[[Free Links]]`.
 Requires that you also set `Base URL`. See [WikiLinks][] for more information.
@@ -355,26 +354,12 @@ does not attempt to interpret or make any use of any of these attributes.
 Also, you can't have a multiword attribute span a newline.
 
 
-## WikiLinks ##
+## WikiLinks (Deprecated)##
 
-MultiMarkdown includes support for "WikiLinks" for those who are using
-MultiMarkdown in a wiki environment, such as [Oddmuse][]. If `Use WikiLinks`
-is set to true in the metadata, then WikiWords, such as `ThisIsAWikiWord` will
-be used to create a link to the given page, using the `Base URL` metadata key
-to construct the URL. Additionally, you can use what Oddmuse refers to as
-"Free Links" --- rather than using "CamelCase" to define a link, you use
-brackets to designate a link with multiple words, e.g. `[[This Is A Free
-Link]]`.
 
-This feature is not really useful outside of a wiki environment.
 
-If you are using this, and want a word that happens to look like a WikiWord to
-be ignored, simply prepend a backslash, e.g. `\ThisIsNotAWikiWord`.
-
-[Oddmuse]: http://www.oddmuse.org/ "Oddmuse Homepage"
-
-**Note:** The WikiLinks feature has come to cause more trouble than it is
-worth. It will likely be deprecated, but one can still use the wiki software
+**Note:** The WikiLinks feature was more trouble than it was
+worth, and has been removed.  One can still use the wiki software
 to manage these links. For example, my [MultiMarkdown Extension] for [Oddmuse]
 supports Oddmuse styled WikiLinks.
 
