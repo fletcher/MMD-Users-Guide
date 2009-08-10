@@ -131,9 +131,13 @@ Set to `complete` to indicate that a fully-formed XHTML document should be
 produced. Such a document is ready for processing by an XSLT tool, such as the
 XSLT files to convert XHTML into LaTeX.
 
+Set to `snippet` to indicate that no `<head>` or other information should be
+included. This might be useful for generating (X)HTML output ready for pasting
+into a weblog, for example.
+
 **Note**: Some MultiMarkdown tools add this for you (e.g. TextMate using my
-bundle, and Scrivener.) Duplicating the `Format` key in these programs will
-not cause a problem.
+bundle, and Scrivener.) Duplicating the `Format` key in these programs should
+not cause a problem --- let me know if you have trouble.
 
 ### Keywords ###
 
