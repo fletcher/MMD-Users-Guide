@@ -271,8 +271,8 @@ within-document links as easily as it handled external links. To this aim, I
 added the ability to interpret `[Some Text][]` as a cross-link, if a header
 named "Some Text" exists.
 
-As an example, `[Introduction to MultiMarkdown][]` will take you to [the
-Introduction][Introduction to MultiMarkdown].
+As an example, `[MultiMarkdown Syntax Guide][]` will take you to the
+[beginning of this section][MultiMarkdown Syntax Guide].
 
 Alternatively, you can include an optional label of your choosing to help
 disambiguate cases where multiple headers have the same title:
