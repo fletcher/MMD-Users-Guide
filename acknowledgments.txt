@@ -48,6 +48,7 @@ improving Markdown and MultiMarkdown:
 *	Stephan Mueller
 *	Josh Brown
 *	Rob Person
+*	Matthew D. Rankin
 
 and others I have surely forgotten....
 
