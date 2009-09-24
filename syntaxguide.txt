@@ -526,8 +526,13 @@ The XHTML that is generated is as follows:
 	
 	</div>
 
-You are not required to use a locator (e.g. `p. 23`), and there are no special
-rules on what can be used as a locator if you choose to use one.
+You are not required to use a locator (e.g. p. 23), and there are
+no special rules on what can be used as a locator if you choose
+to use one. If you prefer to omit the locator, just use an empty
+set of square brackets before the citation:
+
+	This is a statement that should be attributed to its 
+	source[][#Doe:2006].
 
 There are no rules on the citation key format that you use (e.g. `Doe:2006`),
 but it must be preceded by a `#`, just like footnotes use `^`.
