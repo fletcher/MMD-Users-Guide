@@ -1,0 +1,122 @@
+
+# What is Markdown? #
+
+To understand what MultiMarkdown is, you first should be familiar with
+[Markdown](http://daringfireball.net/projects/markdown/ "Daring Fireball:
+Markdown"). The best description of what Markdown is comes from John Gruber's
+Markdown web site:
+
+> Markdown is a text-to-HTML conversion tool for web writers. Markdown
+> allows you to write using an easy-to-read, easy-to-write plain text
+> format, then convert it to structurally valid XHTML (or HTML).
+
+> Thus, “Markdown” is two things: (1) a plain text formatting
+> syntax; and (2) a software tool, written in Perl, that converts
+> the plain text formatting to HTML. See the Syntax page for details
+> pertaining to Markdown’s formatting syntax. You can try it out,
+> right now, using the online Dingus.
+
+> The overriding design goal for Markdown’s formatting syntax is to
+> make it as readable as possible. The idea is that a Markdown-formatted
+> document should be publishable as-is, as plain text, without looking
+> like it’s been marked up with tags or formatting instructions. While
+> Markdown’s syntax has been influenced by several existing
+> text-to-HTML filters, the single biggest source of inspiration for
+> Markdown’s syntax is the format of plain text email. [#Gruber][]
+
+
+
+[#Gruber]: Daring Fireball: Markdown.  
+<http://daringfireball.net/projects/markdown/>
+
+# What is MultiMarkdown? #
+
+
+
+Markdown is great, but it lacked a few features that would allow it to work
+with documents, rather than just pieces of a web page.
+
+I wrote MultiMarkdown in order to leverage Markdown's syntax, but to extend it
+to work with complete documents that could ultimately be converted from text
+into other formats, including complete XHTML documents, LaTeX, PDF, RTF, or
+even (shudder) Microsoft Word documents.
+
+In addition to the ability to work with complete documents and conversion to
+other formats, the Markdown syntax was lacking a few things. Michel Fortin
+added a few additional syntax tools when writing [PHP Markdown Extra][]. Some
+of his ideas were implemented and expanded on in MultiMarkdown.
+
+John Gruber may disagree with me, but I really did try to stick with his
+proclaimed vision whenever I added a new syntax format to MultiMarkdown. The
+quality that attracted me to Markdown the most was its clean format. Reading a
+plain text document written in Markdown is *easy*. It makes sense, and it
+looks like it was designed for people, not computers. To the extent possible,
+I tried to keep this same concept in mind when working on MultiMarkdown.
+
+I may or may not have succeeded in this...
+
+In the vein of Markdown's multiple definitions, you can think of MultiMarkdown
+as:
+
+1. A perl script to convert plain text to XHTML
+
+2. The syntax used in the plain text to describe how to convert it to XHTML
+
+3. The system of programs (perl scripts, shell commands, XSLT transforms, php scripts, etc) used to convert plain text to XHTML, and then to convert XHTML into LaTeX, PDF, RTF, etc)
+
+[PHP Markdown Extra]: http://www.michelf.com/projects/php-markdown/extra/
+
+# How do I use MultiMarkdown? #
+
+
+You can use MultiMarkdown in a variety of ways:
+
+* As a command-line perl program (the "default" approach)
+
+* As a drag and drop application for Mac OS X
+
+* As a [TextMate][]
+[bundle](http://files.fletcherpenney.net/MultiMarkdown.tmbundle.zip)
+
+* Within the [Scrivener][] application
+
+* In a [blosxom][] or [Oddmuse][] web site
+
+[TextMate]:		http://macromates.com/
+[Scrivener]:	http://www.literatureandlatte.com/scrivener.html
+[blosxom]:		http://blosxom.sourceforge.net "blosxom"
+[Oddmuse]:		http://www.oddmuse.org/ "Oddmuse Homepage"
+
+# Where can I find MultiMarkdown? #
+
+
+The MultiMarkdown package can be downloaded:
+
+* <http://files.fletcherpenney.net/MultiMarkdown.zip>
+
+Information about MultiMarkdown is available on my web site:
+
+* <http://fletcherpenney.net/MultiMarkdown>
+
+John Gruber's original Markdown is available at his site:
+
+* <http://daringfireball.net/projects/markdown/>
+
+Michel Fortin's PHP version of Markdown is at his site:
+
+* <http://www.michelf.com/projects/php-markdown/>
+
+
+# Where can I get more information about MultiMarkdown? #
+
+
+As above, check my web site.
+
+Also, you can check out the MultiMarkdown discussion list:
+
+* <http://groups.google.com/group/multimarkdown/>
+* <mailto:multimarkdown@googlegroups.com>
+
+If you questions are specific to Scrivener, you can also browse the Literate and Latte forum:
+
+* <http://www.literatureandlatte.com/forum/>

@@ -3,26 +3,26 @@
 metadata.txt
 
 introduction.txt
-	whatismmd.txt
+	what_is_multimarkdown.txt
 
-quickstart.txt
+quickstart_guide_to_multimarkd.txt
 
-syntaxguide.txt
+multimarkdown_syntax_guide.txt
 
-latex.txt
+multimarkdown_and_latex.txt
 
-advancedfeatures.txt
+advanced_features_and_customiz.txt
 
-components.txt
+component_software.txt
 
-compatiblesoftware.txt
+applications_that_support_mult.txt
 
-technicalissues.txt
+technical_issues.txt
 
 acknowledgments.txt
 
-knownissues.txt
+known_issues.txt
 
-todo.txt
+things_to_do.txt
 
-versions.txt
+version_history.txt

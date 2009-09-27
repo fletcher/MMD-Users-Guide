@@ -1,0 +1,59 @@
+
+
+# Technical Issues #
+
+The MultiMarkdown system is actually a fairly complex group of programs, which
+includes multiple perl utilities, a PHP program, and multiple XSLT files. With
+some hand waving, I try to make it look like a single coherent program, but it
+actually uses multiple utilities written by multiple people.
+
+This section is designed to address some of these issues, and implications
+they may have for users, programmers, etc.
+
+
+## XML Namespace Issues ##
+
+As of version 2.0.a3, there has been a complete overhaul of the way XML
+namespaces are handled. This required changing all of the XSLT files to use an
+"html" alias for the "http://www.w3.org/1999/xhtml" namespace.
+
+It appears to be working, including support for MathML.
+
+If you have any custom XSLT files, you will need to make the same changes,
+specifically:
+
+Make your stylesheet declaration look like:
+
+	<xsl:stylesheet
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:html="http://www.w3.org/1999/xhtml"
+		version="1.0">
+
+And relabel any references to XHTML elements, so that they are preceeded by "html:", e.g. 
+
+	<xsl:template match="/">
+		<xsl:apply-templates select="html/head"/>
+		<xsl:apply-templates select="html/body"/>
+		<xsl:call-template name="latex-footer"/>
+	</xsl:template>
+
+should look like this:
+
+	<xsl:template match="/">
+		<xsl:apply-templates select="html:html/html:head"/>
+		<xsl:apply-templates select="html:html/html:body"/>
+		<xsl:call-template name="latex-footer"/>
+	</xsl:template>
+
+I have left the `-novalid` and `-nonet` options in place to prevent
+unnecessary errors when you are not connected to the internet, but these could
+be removed if desired.
+
+## XeLaTeX Tips ##
+
+If you are using XeLaTeX to process your document (useful for utilizing Mac OS X fonts in your document), you want to use font declarations like this:
+
+	\font\addressbold="Garamond Bold:mapping=tex-text" at 8pt
+
+By including the ":mapping=tex-text" portion, you regain use of smart quotes, en- and em- dashes, etc.  I'm sure most XeLaTeX users know this, but it took me a bit of trial and error to discover it....
+

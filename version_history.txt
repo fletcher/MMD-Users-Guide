@@ -1,0 +1,181 @@
+
+# Version History #
+
+> Release early, release often!
+> > Linus Torvalds
+
+* 2.0.b6 - Fix support for base header level with Setext-style headers (thanks
+  to Rob Walton); improve Windows support;
+
+* 2.0.b5 - spaces at end of xslt filenames won't cause failure; use `\url{}`
+  for "non-referenced" url's in LaTeX to allow linebreaks (though they still
+  don't always break correctly --- this is a problem with `hyperref` not MMD);
+  don't convert `^` to exponents in the `clean-text-allow-latex.xslt` file so
+  that math code works properly; the S5 XSLT file at least partially works
+  again now; update the TextMate bundle to work with Leopard; updated the
+  envelope and letterhead files; include `6x9book-real-poetry` XSLT that uses
+  memoir's poetry features fairly well; rework the `clean-text` files to make
+  them easier to update in the future and more modular; XHTML comments are now
+  passed through as raw LaTeX; unescape encoding within comments;
+
+* 2.0.b4 - empty labels for headers now produce valid XHTML (e.g. no `id=""`);
+  fix bug in `clean-text.xslt` that caused a problem with closing double
+  quotes; the `.xslt` extension is no longer required in metadata; added
+  customizable letterhead XSLT; fix bug in table support that choked on extra
+  spaces at end of lines; *Major Change*: switched to Text::ASCIIMathML for
+  math support, meaning that everything is once again perl based (this enables
+  math features on web sites using MultiMarkdown, for example); fix bug that
+  occurred when 'Abstract' was not the first chapter;
+
+* 2.0.b3 - move the `clean-text` routine from `xhtml2latex.xslt` into it's own
+  file (to allow easier modification by users); create alternate version that
+  does not protect certain characters in order to allow raw LaTeX code to be
+  passed through; added `latex-snippet.xslt` stylesheet for inclusion in
+  outside LaTeX template systems; added `xhtml-poetry-support.xslt` and
+  `xhtml-toc.xslt` to demonstrate how to extend MMD functionality for XHTML
+  output with new system; fix bug in SmartyPants that processed typography
+  within `<style>` sections (thanks AmberV); fix handling of links by
+  reference in headers and handling of attributes when links are referenced
+  multiple times (thanks to Edward Nixon); fix bug in epigraphs (thanks
+  etherean); improve id generation for footnotes - e.g. match behavior of PHP
+  Markdown Extra (thanks to Özgür Gökmen); fix bug in id generation for ToC
+  for XHTML documents; fix problem with `\ldots` command (thanks to etherean
+  and James Howison); fix issue with `&#160;` and tilde character; fix bug
+  where footnote special characters were not unescaped (thanks to Chad
+  Schmidt); clean up documentation a bit;
+
+* 2.0.b2 - fix processing of footnotes so that ending in a blockquote doesn't
+  break validity; fix bug in `letter.xslt`; overhaul XSLT system to allow for
+  different XSLT files for different output formats (e.g. HTML, RTF, LaTeX);
+
+* 2.0.b1 - fix bug in `_StripLinkDefinitions` that prevented detection of
+  single character labels; change `\textwidth` to `\linewidth` in LaTeX export
+  XSLT files (let me know if this causes problems); add Windoze compatibility
+  to the perl scripts (thanks to Jason Bandlow for pointing out this problem,
+  as well as for suggesting a fix);fix issues with glossary support and
+  document the process; complete overhaul of the way namespaces are handled
+  (`stripnamespace.pl` is no longer needed, XSLT files are rewritten, `-nonet`
+  and `-novalid` should be optional for xsltproc); update the Drag and Drop
+  applications to use the "Common" MMD Installation; update to Markdown
+  1.0.2b8 codebase; add support for natbib and `\citep` and `\citet`;
+
+* 2.0.a2 - fix some minor problems with XSLTMathML; allow math to be enclosed
+  in parentheses; change matching for bottomrule in tables; improve handling
+  of tables with no header row (only a header column);
+
+* 2.0.a1 - strip spaces from metadata keys for XHTML validity; make XHTML
+  footnote output more compatible with Gruber's website and PHP Markdown
+  Extra; update XSLT to address these changes (*Note*: this breaks
+  compatibility with prior versions); add support for definition lists; fix
+  bug when escaping WikiWords in code; add `XHTML Header` metadata, and update
+  XSLT to ignore `<style>` tags; add support for the `XSLT File` metadata tag,
+  which allows a single command to parse any MultiMarkdown file; add
+  additional XSLT files; add the multimarkdown2XHTML.pl and related commands;
+  article XSLT now uses the article option in memoir, rather than the article
+  class; delete the report class (use memoir instead); fix a **lot** of
+  "minor" bugs; add the "6x9book.xslt" option; allow custom cross-reference
+  labels to headers; give preference to defined links over automatic
+  cross-references; add "poetry" versions of several XSLT files (treat code
+  blocks as formatted text, rather than code --- useful for formatting poetry)
+
+* 2.0.a - New version numbering scheme; update to Markdown.pl 1.0.2b7 code;
+  add support for `[link reference]` shortcut syntax (i.e. no trailing `[]`)
+  for MultiMarkdown crossrefs; add an extra newline in verbatims to add space
+  before the next paragraph; synchronize numbering schemes of all related
+  MultiMarkdown tools to make it easier to ensure compatibility; add revision
+  numbers to source documents to help track incompatibilities; add LaTeX
+  support for `i.e.` and `e.g.`; TextMate MultiMarkdown bundle available;
+  update MultiMarkdownDragAndDrop tools to new codebase; now distributed as a
+  zipfile.
+
+* 1.0.1Multi19.4 - major update; fix issue where cross-references to images
+  defined by alt text had to follow the image in the document; add support for
+  MathML via ASCIIMathPHP; change `name` to `id` for footnotes; move
+  _DoHeaders in front of _DoTables to allow cross-references inside tables;
+  fix handling of citations without locator; a table with no header titles and
+  no column alignment row is interpreted as a pull-quote - this is
+  experimental and may be changed; the `Bibliography Title` metadata field is
+  available for LaTeX to rename the bibliography section; multiple changes to
+  XSLT files to improve compatibility; support for `<< math >>` syntax using
+  ASCIIMathPHP; change `HeaderLevel` to `Base Header Level` and process it in
+  XSLT rather than in the OmniOutliner tool; support for `Affiliation`
+  metadata element; add equation label to possible cross-reference list;
+  compatible with epigraph feature for XSLT conversion to LaTeX; document
+  table labeling feature and default to caption if no label present;
+
+* 1.0.1Multi19.2 - require leading space before unescaping \WikiWord; fixed
+  bug where attributes not included with images; add `Bibliography Title`
+  metadata key; fix bug with invalid leading characters in header id
+  attributes; allow '-' and '_' in metadata; fix handling of citations in
+  footnotes; fix issue with quotes in link attributes.
+
+* 1.0.1Multi19.1 - minor change to bibliography formatting to allow
+  translation into a \BibTeX compatible format *without* the use of a `.bib`
+  file;
+
+* 1.0.1Multi19 - Major update; fix bugs discovered by testing with
+  MarkdownTest 1.0; don't add leading blank line if no metadata exists; fix
+  parsing of link definitions, including attribute parsing; various clean- ups
+  to code and documentation; improve cross-reference handling of special
+  characters; fix bug in handling of wiki links (`/` is not automatically
+  added any more); fix bug in `title` attributes of images; re-enable the
+  inclusion of `DOCTYPE` in complete documents (this requires the use of the
+  `-nonet` and `-novalid` options in xsltproc; fix bug in handling of `**`;
+  fix bug where WikiWords in code blocks and spans were not unescaped; fix bug
+  where digits were not allowed in metadata keys; fix numbering of footnotes
+  so that they remain in proper order; add basic citation and bibliography
+  features; major bug fixes and testing to precede the release of version 20
+  (2.0)
+
+* 1.0.1Multi18 - further work to make WikiWord escaping work properly...
+
+* 1.0.1Multi17 - add support for "char" alignment in table columns (**NOTE**:
+  browsers do not currently support this); fix bug with `\` in code spans when
+  WikiWords are disabled; fix bug in bold/italic detection
+
+* 1.0.1Multi16 - can now optionally have header in first cell of each row; fix
+  bug in footnote counting (thanks to Mark Eli Kalderon for pointing this
+  out);
+
+* 1.0.1Multi15 - allow for multiple `<tbody>` span's within a table; ensure
+  that the variable`$g_empty_element_suffix` is used everywhere; protect code
+  spans from table parsing
+
+* 1.0.1Multi14 - captions can now be before or after table; add syntax for
+  column spanning within tables (body and header)
+
+* 1.0.1Multi13 - added support for CSS metadata key; allow no alignment option
+  on table cells; support for captions for tables
+
+* 1.0.1Multi12 - added support for image/link attributes; fixed bug in table
+  handling
+
+* 1.0.1Multi11 - added support for table syntax
+
+* 1.0.1Multi10 - allow emphasis at beginning of line
+
+* 1.0.1Multi9 - fix bug in metadata parsing
+
+* 1.0.1Multi8 - first draft of fix for "underscore within a word" problem that
+  causes so many errors with URL's. Now a leading whitespace is required in
+  front of the "opening" `_` or `*` for it to be interpreted as emphasis or
+  strong.
+
+* 1.0.1Multi7 - add Wiki Links support
+
+* 1.0.1Multi6 - correct bug in footnote id handling (Thanks to Jonathan Weber
+  for pointing this out)
+
+* 1.0.1Multi5 - allow disabling of metadata feature
+
+* 1.0.1Multi4 - convert `&copy;` entities to `&#xA9;` (compatible with XSLT);
+  generate cross-refs for images
+
+* 1.0.1Multi3 - fix metadata parsing in the event a key was empty
+
+* 1.0.1Multi2 - add support for footnotes. **Major** change - no longer use
+  templates, but rather will focus on using XSLT to convert from XHTML output
+  to other formats. I think this will be more flexible and less error prone.
+
+* 1.0.1M - initial release
+
