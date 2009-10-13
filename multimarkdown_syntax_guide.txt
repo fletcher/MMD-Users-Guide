@@ -218,7 +218,7 @@ other export formats.
 ### Use WikiLinks (Deprecated)###
 
 Set to `true` or `1` to enable the use of `WikiWords` and `[[Free Links]]`.
-Requires that you also set `Base URL`. See [WikiLinks][] for more information.
+Requires that you also set `Base URL`. See [WikiLinks (Deprecated)][] for more information.
 
 
 ### Web ###
@@ -362,12 +362,13 @@ Also, you can't have a multiword attribute span a newline.
 
 
 
-**Note:** The WikiLinks feature was more trouble than it was
-worth, and has been removed.  One can still use the wiki software
-to manage these links. For example, my [MultiMarkdown Extension] for [Oddmuse]
+**Note:** The WikiLinks feature was more trouble than it was worth, and has
+been removed. One can still use the wiki software to manage these links. For
+example, my [MultiMarkdown Extension] for [Oddmuse](http://www.oddmuse.org/)
 supports Oddmuse styled WikiLinks.
 
 [MultiMarkdown Extension]: http://www.oddmuse.org/cgi-bin/wiki/Markdown_Extension 
+
 
 ## Footnotes ##
 
