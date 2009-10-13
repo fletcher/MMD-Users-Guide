@@ -1,5 +1,4 @@
 
-
 # Introduction to MultiMarkdown #
 
 This document is an introduction to [MultiMarkdown][] --- what it is, how to
