@@ -1,5 +1,4 @@
 
-
 # Things to Do #
 
 * Add a syntax to allow comments that can be stripped before passing the

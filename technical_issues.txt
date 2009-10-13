@@ -1,5 +1,4 @@
 
-
 # Technical Issues #
 
 The MultiMarkdown system is actually a fairly complex group of programs, which
