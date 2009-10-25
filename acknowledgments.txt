@@ -49,6 +49,7 @@ improving Markdown and MultiMarkdown:
 *	Josh Brown
 *	Rob Person
 *	Matthew D. Rankin
+*	Dawid Ciężarkiewicz
 
 and others I have surely forgotten....
 
