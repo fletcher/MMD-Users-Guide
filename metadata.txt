@@ -19,6 +19,6 @@ Keywords:			Markdown
 					TextMate  
 Version:			2.0.b6
 Base Header Level:	2
-CSS:				http://fletcherpenney.net/document.css
+CSS:				http://fletcherpenney.net/css/document.css
 XHTML XSLT:			xhtml-toc-h2.xslt
 
