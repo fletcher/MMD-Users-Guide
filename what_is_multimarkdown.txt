@@ -80,12 +80,13 @@ You can use MultiMarkdown in a variety of ways:
 
 * Within the [Scrivener][] application
 
-* In a [blosxom][] or [Oddmuse][] web site
+* In a [blosxom][], [Movable Type][], [Oddmuse][], or other web site
 
 [TextMate]:		http://macromates.com/
 [Scrivener]:	http://www.literatureandlatte.com/scrivener.html
 [blosxom]:		http://blosxom.sourceforge.net "blosxom"
 [Oddmuse]:		http://www.oddmuse.org/ "Oddmuse Homepage"
+[movable type]:	http://www.movabletype.org/ "Movable Type"
 
 # Where can I find MultiMarkdown? #
 
