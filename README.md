@@ -1,4 +1,4 @@
-Title: MultiMarkdown User's Guide
+Title: MultiMarkdown User's Guide  
 Author:			Fletcher T. Penney  
 Date:			July 10, 2009  
 Copyright:		2009 Fletcher T. Penney.  
