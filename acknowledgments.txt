@@ -51,6 +51,7 @@ improving Markdown and MultiMarkdown:
 *	Matthew D. Rankin
 *	Dawid Ciężarkiewicz
 *	Joonas Pulakka
+*	ipetraka
 
 and others I have surely forgotten....
 
